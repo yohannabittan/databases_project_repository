@@ -1,0 +1,27 @@
+<!--#homePage-->
+
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>{{title}}</title>
+	</head>
+	<h2>Here is all the content that is public to you</h2>
+
+{% if content %}
+    {% for temp in content %}
+    	<p> {{ temp.content_name }}</p>
+        <p>posted by: {{ temp.username }}</p>
+        <p>posted at: {{ temp.timest }}</p>
+        <p>file path: {{ temp.file_path }}</p>
+
+    {% endfor %}
+{% endif %}
+
+	<form action="/prePost" method=['GET']>
+	<input type="submit" value="post"/></br>
+	</form>
+	<form action="/logout" method=['GET']>
+	<input type="submit" value="Logout"/></br>
+	</form>
+</html>

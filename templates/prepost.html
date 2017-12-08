@@ -1,0 +1,18 @@
+<!--#prePost-->
+
+<html lang="en">
+	<body>
+	<h2> Enter the information you would like to post </h2>
+	<form action="/postPost" method=["POST"]>
+	<input type="text" name="filepath" placeholder="filepath" required/></br>
+	<input type="text" name="contentname" placeholder="contentname" required/></br>
+	<p>if you would like the content to be public, enter public otherwise enter private</p>
+	<!--<input type="text" name="public" placeholder="public?" required/></br>-->
+
+	<p>Check the box if you would like your content to be public.</p>>
+	<input type="checkbox" name="public" placeholder="public" value="True"/></br>
+	<input type="hidden" name="public2" value="False">
+	<input type="submit" value = post>
+	</form>
+	</body>
+</html>
